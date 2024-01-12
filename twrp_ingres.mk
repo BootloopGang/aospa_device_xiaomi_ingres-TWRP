@@ -14,6 +14,9 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from ingres device
 $(call inherit-product, device/xiaomi/ingres/device.mk)
 
+# Inherit any OrangeFox-specific settings
+$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_$(PRODUCT_RELEASE_NAME).mk)
+
 PRODUCT_DEVICE := ingres
 PRODUCT_NAME := twrp_ingres
 PRODUCT_BRAND := Xiaomi
