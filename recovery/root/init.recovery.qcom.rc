@@ -96,3 +96,5 @@ service keymaster-4-1 /vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
     group root
     disabled
     seclabel u:r:recovery:s0
+
+import /init.recovery.qcom_decrypt.rc
